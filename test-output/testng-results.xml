@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="8" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-13T00:16:31Z" name="Default suite" finished-at="2023-11-13T00:19:42Z" duration-ms="191300">
+    <groups>
+    </groups>
+    <test started-at="2023-11-13T00:16:31Z" name="Default test" finished-at="2023-11-13T00:19:42Z" duration-ms="191300">
+      <class name="TestNG_Package.OrderSummary">
+        <test-method is-config="true" signature="intializtion()[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:16:31Z" name="intializtion" finished-at="2023-11-13T03:16:34Z" duration-ms="3536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializtion -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:16:34Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:16:53Z" duration-ms="18895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/eg-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Egypt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:16:53Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:16:55Z" duration-ms="2140" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/ae-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UAE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (725, 568)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=AB4C385EB4C98A9538D31DBE7476AECE_element_112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 568)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=AB4C385EB4C98A9538D31DBE7476AECE_element_112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Subscription_Flow_Works_Successfully(OrderSummary.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:16:55Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:17:12Z" duration-ms="16593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/dz-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Algeria]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:17:12Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:17:32Z" duration-ms="20158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/dj-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Djibouti]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:17:32Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:17:49Z" duration-ms="17344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/td-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:17:49Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:17:53Z" duration-ms="3823" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/iq-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Iraq]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (725, 568)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=1A5A2DB527FA0BCF62571B66AC7BBC63_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 568)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=1A5A2DB527FA0BCF62571B66AC7BBC63_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Subscription_Flow_Works_Successfully(OrderSummary.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:17:53Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:17:57Z" duration-ms="3514" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/jo-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jordan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (725, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=509AAEB11CC1CAF3DCA09CC33BBD4EBB_element_125}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=509AAEB11CC1CAF3DCA09CC33BBD4EBB_element_125}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Subscription_Flow_Works_Successfully(OrderSummary.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:17:57Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:18:13Z" duration-ms="16150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/lb-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lebanon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:18:13Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:18:32Z" duration-ms="19427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/ma-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Morocco]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:18:32Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:18:36Z" duration-ms="3846" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/om-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Oman]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (725, 602)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=B8F9D36DD69601E3C999DBBC3902D147_element_125}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 602)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=B8F9D36DD69601E3C999DBBC3902D147_element_125}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Subscription_Flow_Works_Successfully(OrderSummary.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:18:36Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:18:40Z" duration-ms="3608" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/tn-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tunisia]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (725, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=12A45300DCC38E7435CA3C2B433ABFD4_element_138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e46b0282f59aa06095502f9b49e6aa7d, clickElement {id=12A45300DCC38E7435CA3C2B433ABFD4_element_138}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51743/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e46b0282f59aa06095502f9b49e6aa7d)] -> css selector: #lite-selection]
+Session ID: e46b0282f59aa06095502f9b49e6aa7d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Subscription_Flow_Works_Successfully(OrderSummary.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:18:40Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:19:19Z" duration-ms="39394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/ye-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yemen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method signature="Validate_Subscription_Flow_Works_Successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:19:19Z" name="Validate_Subscription_Flow_Works_Successfully" data-provider="getCountry" finished-at="2023-11-13T03:19:42Z" duration-ms="22512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://subscribe.jawwy.tv/ps-en]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Palestine]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#lite-selection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#classic-selection]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#premium-selection]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Subscription_Flow_Works_Successfully -->
+        <test-method is-config="true" signature="EndTest()[pri:0, instance:TestNG_Package.OrderSummary@4fdf8f12]" started-at="2023-11-13T03:19:42Z" name="EndTest" finished-at="2023-11-13T03:19:42Z" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndTest -->
+      </class> <!-- TestNG_Package.OrderSummary -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

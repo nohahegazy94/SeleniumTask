@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Subscriptions</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>99/18/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 12 17:16:33 AST 2023</td>
+<td>Started on:</td><td>Mon Nov 13 09:39:16 AST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31749 ms)</td>
+<tr><td>Total time:</td><td>162 seconds (162651 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,1344 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1011, -629)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=580DE19237407ACBC1B4F49C125FAFCD_element_220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; xpath: //*[@id=&quot;btnFinalStepSubscribe&quot;]]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:140)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1795560878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1795560878'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1011, -629)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=580DE19237407ACBC1B4F49C125FAFCD_element_220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; xpath: //*[@id=&quot;btnFinalStepSubscribe&quot;]]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=C84032366D01868F9240C29058B6F75A_element_231}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace891232836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace891232836'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=C84032366D01868F9240C29058B6F75A_element_231}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=2D17D687D6887F52C9F71A08A75C5771_element_97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace440902120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace440902120'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=2D17D687D6887F52C9F71A08A75C5771_element_97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=29BBE50C9DF1D39B0FF90D0012BA216E_element_109}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1720067573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1720067573'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=29BBE50C9DF1D39B0FF90D0012BA216E_element_109}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=C61413CFE0BD11BF9088B30F20343507_element_100}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1335082762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1335082762'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=C61413CFE0BD11BF9088B30F20343507_element_100}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=1E70E45E11629693371917D8F62C8F3B_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace919063521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace919063521'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (912, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=1E70E45E11629693371917D8F62C8F3B_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #classic-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully(OrderSummary.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 601)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=639FA02E767C3529F0428AF1A0225AAA_element_106}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2002903874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2002903874'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 601)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=639FA02E767C3529F0428AF1A0225AAA_element_106}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=CE85A7930C64EED89E45E0F0FD72CC0A_element_118}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace874277570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace874277570'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=CE85A7930C64EED89E45E0F0FD72CC0A_element_118}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=E6231746A1CA4E6C0D83081CB942EFE1_element_100}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275269089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275269089'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=E6231746A1CA4E6C0D83081CB942EFE1_element_100}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=527D88A60228EDB718799F353EBD3A01_element_112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace172880465", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace172880465'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=527D88A60228EDB718799F353EBD3A01_element_112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 601)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=FAD66C65781F567FAD8A7A211C10C8E6_element_101}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1471364137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1471364137'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 601)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=FAD66C65781F567FAD8A7A211C10C8E6_element_101}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=315A957CC6213C2DAD2FDB576A06E81F_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1131905905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1131905905'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (725, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=315A957CC6213C2DAD2FDB576A06E81F_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #lite-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully(OrderSummary.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 601)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=6B215AA88DA1C86C6AE18F338368EA86_element_106}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace408583632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace408583632'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 601)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=6B215AA88DA1C86C6AE18F338368EA86_element_106}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=BBCCDB6B39BD6976467579E504758F5B_element_118}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1404232171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1404232171'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=BBCCDB6B39BD6976467579E504758F5B_element_118}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=F03CEF91E2D9A44A63DAB09E9FCDE2DD_element_99}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace848564270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace848564270'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 581)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=F03CEF91E2D9A44A63DAB09E9FCDE2DD_element_99}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 597)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=F74F12AC97642F4C0D7BA143E96F1D32_element_111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace857972082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace857972082'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 597)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=F74F12AC97642F4C0D7BA143E96F1D32_element_111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=9F98E3FE236F8350C82F140AC3852E88_element_100}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173755930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173755930'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 590)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=9F98E3FE236F8350C82F140AC3852E88_element_100}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 597)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=0351DD4043AA3AF7B9B7DF132F3B2CEB_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431008242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431008242'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1099, 597)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a44ca6b2c72e4ba1baee0cac9ed883c9, clickElement {id=0351DD4043AA3AF7B9B7DF132F3B2CEB_element_113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\nohah\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56582/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a44ca6b2c72e4ba1baee0cac9ed883c9)] -&gt; css selector: #premium-selection]
+Session ID: a44ca6b2c72e4ba1baee0cac9ed883c9
+	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully(OrderSummary.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,72 +1416,497 @@ function toggleAllBoxes() {
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
 <td></td>
 <td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
 <td></td>
 <td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
 <td></td>
 <td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
 <td title='TestNG_Package.SubscriptionPage.ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName()'><b>ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.SubscriptionPage@43d455c9</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
 <tr>
-<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription()'><b>Validate_Lite_Subscription</b><br>Test class: TestNG_Package.OrderSummary</td>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
 <td></td>
-<td>1</td>
-<td>TestNG_Package.OrderSummary@5e8a459</td></tr>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_AddOns_SectionDisplayedSuccessfully()'><b>ValidateThat_AddOns_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Classic_PackageDisplayedSuccessfully()'><b>ValidateThat_Classic_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_GiftCard_SectionDisplayedSuccessfully()'><b>ValidateThat_GiftCard_SectionDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Lite_PackageDisplayedSuccessfully()'><b>ValidateThat_Lite_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/eg-en, Egypt</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ae-en, UAE</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/iq-en, Iraq</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/jo-en, Jordan</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/om-en, Oman</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/tn-en, Tunisia</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.SubscriptionPage.ValidateThat_Premium_PackageDisplayedSuccessfully()'><b>ValidateThat_Premium_PackageDisplayedSuccessfully</b><br>Test class: TestNG_Package.SubscriptionPage<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>0</td>
+<td>TestNG_Package.SubscriptionPage@63ec445c</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>5</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>6</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>5</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Classic_Subscription_Flow_is_Working_Successfully()'><b>Validate_Classic_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>6</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Lite_Subscription_Flow_is_Working_Successfully()'><b>Validate_Lite_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/dz-en, Algeria</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/dj-en, Djibouti</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/td-en, Chad</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/lb-en, Lebanon</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ma-en, Morocco</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ye-en, Yemen</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
+<tr>
+<td title='TestNG_Package.OrderSummary.Validate_Premium_Subscription_Flow_is_Working_Successfully()'><b>Validate_Premium_Subscription_Flow_is_Working_Successfully</b><br>Test class: TestNG_Package.OrderSummary<br>Parameters: https://subscribe.jawwy.tv/ps-en, Palestine</td>
+<td></td>
+<td>4</td>
+<td>TestNG_Package.OrderSummary@656d10a4</td></tr>
 </table><p>
 </body>
 </html>

@@ -35,209 +35,199 @@ public class OrderSummary {
 	}
 
 	@Test(dataProvider = "getCountry", dataProviderClass = Constant_Countries.class)
-	public void Validate_Subscription_Flow_Works_Successfully(String URL, String Country, String Lite_Subscription, String Classic_Subscription, String Premuim_Subscription) {
+	public void Validate_Lite_Subscription_Flow_is_Working_Successfully(String URL, String Country) {
 
-		String[] Subscriptions = {Lite_Subscription, Classic_Subscription, Premuim_Subscription}; 
 		driver.get(URL);
-		
-		for (int i=0;i<Subscriptions.length;i++)
-		{
-			driver.manage().window().maximize();
-			js.executeScript("window.scrollBy(0,400)", "");
+		driver.manage().window().maximize();
+		js.executeScript("window.scrollBy(0,400)", "");
 
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(400));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(500));
 
-		    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(Subscriptions[i])));
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#lite-selection")));
 
-			driver.findElement(By.cssSelector(Subscriptions[i])).click();
-			wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		driver.findElement(By.cssSelector("#lite-selection")).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PaymentHeader)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PaymentHeader)));
 
-			driver.findElement(By.cssSelector(ConstantObj.PaymentOption));
-			driver.findElement(By.cssSelector(ConstantObj.OrderSummaryTitle));
-			driver.findElement(By.xpath(ConstantObj.GiftCardTitle));
-			driver.findElement(By.xpath(ConstantObj.GiftCardOption));
-			driver.findElement(By.cssSelector(ConstantObj.PaymentMethodRadioButton));
+		driver.findElement(By.cssSelector(ConstantObj.PaymentOption));
+		driver.findElement(By.cssSelector(ConstantObj.OrderSummaryTitle));
+		driver.findElement(By.xpath(ConstantObj.GiftCardTitle));
+		driver.findElement(By.xpath(ConstantObj.GiftCardOption));
+		driver.findElement(By.cssSelector(ConstantObj.PaymentMethodRadioButton));
 
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.PaymentMethod_NextButton)));
-			driver.findElement(By.xpath(ConstantObj.PaymentMethod_NextButton)).click();
-			wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.PaymentMethod_NextButton)));
+		driver.findElement(By.xpath(ConstantObj.PaymentMethod_NextButton)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-			driver.findElement(By.cssSelector(ConstantObj.Addons_Options));
+		driver.findElement(By.cssSelector(ConstantObj.Addons_Options));
 
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.Next_Button)));
-			driver.findElement(By.xpath(ConstantObj.Next_Button)).click();
-			wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.Next_Button)));
+		driver.findElement(By.xpath(ConstantObj.Next_Button)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-			driver.findElement(By.xpath(ConstantObj.EmailAddress_Field)).sendKeys(ConstantObj.UserEmail);
-			driver.findElement(By.xpath(ConstantObj.Passowrd_Field)).sendKeys(ConstantObj.UserPasswrd);
+		driver.findElement(By.xpath(ConstantObj.EmailAddress_Field)).sendKeys(ConstantObj.UserEmail);
+		driver.findElement(By.xpath(ConstantObj.Passowrd_Field)).sendKeys(ConstantObj.UserPasswrd);
 
-			js.executeScript("window.scrollBy(0,200)", "");
+		js.executeScript("window.scrollBy(0,200)", "");
 
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.GoToPaymentMethod_Button)));
-			driver.findElement(By.xpath(ConstantObj.GoToPaymentMethod_Button)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.GoToPaymentMethod_Button)));
+		driver.findElement(By.xpath(ConstantObj.GoToPaymentMethod_Button)).click();
 
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PageLogo)));
-			driver.findElement(By.cssSelector(ConstantObj.PageLogo));
-			driver.findElement(By.cssSelector(ConstantObj.CompleteSubscription_Title));
-			driver.findElement(By.xpath(ConstantObj.CardNameHolder_Field));
-			driver.findElement(By.xpath(ConstantObj.CardNumber_Field));
-			driver.findElement(By.xpath(ConstantObj.CardExpiry_Month));
-			driver.findElement(By.xpath(ConstantObj.CardExpiry_Year));
-			driver.findElement(By.xpath(ConstantObj.CardCVV));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PageLogo)));
+		driver.findElement(By.cssSelector(ConstantObj.PageLogo));
+		driver.findElement(By.cssSelector(ConstantObj.CompleteSubscription_Title));
+		driver.findElement(By.xpath(ConstantObj.CardNameHolder_Field));
+		driver.findElement(By.xpath(ConstantObj.CardNumber_Field));
+		driver.findElement(By.xpath(ConstantObj.CardExpiry_Month));
+		driver.findElement(By.xpath(ConstantObj.CardExpiry_Year));
+		driver.findElement(By.xpath(ConstantObj.CardCVV));
 
-			driver.findElement(By.cssSelector(ConstantObj.CancelButton));
-			driver.findElement(By.cssSelector(ConstantObj.SubmitButton));
+		driver.findElement(By.cssSelector(ConstantObj.CancelButton));
+		driver.findElement(By.cssSelector(ConstantObj.SubmitButton));
 
-			wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConstantObj.CancelButton)));
-			driver.findElement(By.cssSelector(ConstantObj.CancelButton)).click();
-			wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConstantObj.CancelButton)));
+		driver.findElement(By.cssSelector(ConstantObj.CancelButton)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ConstantObj.PromoPage)));
-			driver.findElement(By.xpath(ConstantObj.PromoPage));
-			driver.findElement(By.xpath(ConstantObj.AddEmailField));
-			driver.findElement(By.xpath(ConstantObj.RedeemTheOfferButton));
-			driver.findElement(By.xpath(ConstantObj.DisplayedCountryName));
-			
-			// AssertJUnit.assertEquals(driver.findElement(By.xpath(ConstantObj.DisplayedCountryName)).getText(),Country);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ConstantObj.PromoPage)));
+		driver.findElement(By.xpath(ConstantObj.PromoPage));
+		driver.findElement(By.xpath(ConstantObj.AddEmailField));
+		driver.findElement(By.xpath(ConstantObj.RedeemTheOfferButton));
+		driver.findElement(By.xpath(ConstantObj.DisplayedCountryName));
 
-		}
-		
-				
+		// AssertJUnit.assertEquals(driver.findElement(By.xpath(ConstantObj.DisplayedCountryName)).getText(),Country);
 	}
 
-//	@Test(dataProvider = "getCountry", dataProviderClass = Constant_Countries.class)
-//	public void Validate_Classic_Subscription(String URL, String Country) {
-//
-//		driver.get(URL);
-//		driver.manage().window().maximize();
-//		js.executeScript("window.scrollBy(0,400)", "");
-//
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(400));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#classic-selection")));
-//
-//		driver.findElement(By.cssSelector("#classic-selection")).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-//
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PaymentHeader)));
-//
-//		driver.findElement(By.cssSelector(ConstantObj.PaymentOption));
-//		driver.findElement(By.cssSelector(ConstantObj.OrderSummaryTitle));
-//		driver.findElement(By.xpath(ConstantObj.GiftCardTitle));
-//		driver.findElement(By.xpath(ConstantObj.GiftCardOption));
-//		driver.findElement(By.cssSelector(ConstantObj.PaymentMethodRadioButton));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.PaymentMethod_NextButton)));
-//		driver.findElement(By.xpath(ConstantObj.PaymentMethod_NextButton)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		driver.findElement(By.cssSelector(ConstantObj.Addons_Options));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.Next_Button)));
-//		driver.findElement(By.xpath(ConstantObj.Next_Button)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		driver.findElement(By.xpath(ConstantObj.EmailAddress_Field)).sendKeys(ConstantObj.UserEmail);
-//		driver.findElement(By.xpath(ConstantObj.Passowrd_Field)).sendKeys(ConstantObj.UserPasswrd);
-//
-//		js.executeScript("window.scrollBy(0,200)", "");
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.GoToPaymentMethod_Button)));
-//		driver.findElement(By.xpath(ConstantObj.GoToPaymentMethod_Button)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PageLogo)));
-//		driver.findElement(By.cssSelector(ConstantObj.PageLogo));
-//		driver.findElement(By.cssSelector(ConstantObj.CompleteSubscription_Title));
-//		driver.findElement(By.xpath(ConstantObj.CardNameHolder_Field));
-//		driver.findElement(By.xpath(ConstantObj.CardNumber_Field));
-//		driver.findElement(By.xpath(ConstantObj.CardExpiry_Month));
-//		driver.findElement(By.xpath(ConstantObj.CardExpiry_Year));
-//		driver.findElement(By.xpath(ConstantObj.CardCVV));
-//
-//		driver.findElement(By.cssSelector(ConstantObj.CancelButton));
-//		driver.findElement(By.cssSelector(ConstantObj.SubmitButton));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConstantObj.CancelButton)));
-//		driver.findElement(By.cssSelector(ConstantObj.CancelButton)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ConstantObj.PromoPage)));
-//		driver.findElement(By.xpath(ConstantObj.PromoPage));
-//		driver.findElement(By.xpath(ConstantObj.AddEmailField));
-//		driver.findElement(By.xpath(ConstantObj.RedeemTheOfferButton));
-//		driver.findElement(By.xpath(ConstantObj.DisplayedCountryName));
-//
-//		// AssertJUnit.assertEquals(driver.findElement(By.xpath(ConstantObj.DisplayedCountryName)).getText(),Country);
-//	}
-//
-//	@Test(dataProvider = "getCountry", dataProviderClass = Constant_Countries.class)
-//	public void Validate_Premium_Subscription(String URL, String Country) {
-//
-//		driver.get(URL);
-//		driver.manage().window().maximize();
-//		js.executeScript("window.scrollBy(0,400)", "");
-//
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(400));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#premium-selection")));
-//
-//		driver.findElement(By.cssSelector("#premium-selection")).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-//
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PaymentHeader)));
-//
-//		driver.findElement(By.cssSelector(ConstantObj.PaymentOption));
-//		driver.findElement(By.cssSelector(ConstantObj.OrderSummaryTitle));
-//		driver.findElement(By.xpath(ConstantObj.GiftCardTitle));
-//		driver.findElement(By.xpath(ConstantObj.GiftCardOption));
-//		driver.findElement(By.cssSelector(ConstantObj.PaymentMethodRadioButton));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.PaymentMethod_NextButton)));
-//		driver.findElement(By.xpath(ConstantObj.PaymentMethod_NextButton)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		driver.findElement(By.cssSelector(ConstantObj.Addons_Options));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.Next_Button)));
-//		driver.findElement(By.xpath(ConstantObj.Next_Button)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		driver.findElement(By.xpath(ConstantObj.EmailAddress_Field)).sendKeys(ConstantObj.UserEmail);
-//		driver.findElement(By.xpath(ConstantObj.Passowrd_Field)).sendKeys(ConstantObj.UserPasswrd);
-//
-//		js.executeScript("window.scrollBy(0,200)", "");
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.GoToPaymentMethod_Button)));
-//		driver.findElement(By.xpath(ConstantObj.GoToPaymentMethod_Button)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PageLogo)));
-//		driver.findElement(By.cssSelector(ConstantObj.PageLogo));
-//		driver.findElement(By.cssSelector(ConstantObj.CompleteSubscription_Title));
-//		driver.findElement(By.xpath(ConstantObj.CardNameHolder_Field));
-//		driver.findElement(By.xpath(ConstantObj.CardNumber_Field));
-//		driver.findElement(By.xpath(ConstantObj.CardExpiry_Month));
-//		driver.findElement(By.xpath(ConstantObj.CardExpiry_Year));
-//		driver.findElement(By.xpath(ConstantObj.CardCVV));
-//
-//		driver.findElement(By.cssSelector(ConstantObj.CancelButton));
-//		driver.findElement(By.cssSelector(ConstantObj.SubmitButton));
-//
-//		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConstantObj.CancelButton)));
-//		driver.findElement(By.cssSelector(ConstantObj.CancelButton)).click();
-//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-//
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ConstantObj.PromoPage)));
-//		driver.findElement(By.xpath(ConstantObj.PromoPage));
-//		driver.findElement(By.xpath(ConstantObj.AddEmailField));
-//		driver.findElement(By.xpath(ConstantObj.RedeemTheOfferButton));
-//		driver.findElement(By.xpath(ConstantObj.DisplayedCountryName));
-//
-//		// AssertJUnit.assertEquals(driver.findElement(By.xpath(ConstantObj.DisplayedCountryName)).getText(),Country);
-//	}
+	@Test(dataProvider = "getCountry", dataProviderClass = Constant_Countries.class)
+	public void Validate_Classic_Subscription_Flow_is_Working_Successfully(String URL, String Country) {
+
+		driver.get(URL);
+		driver.manage().window().maximize();
+		js.executeScript("window.scrollBy(0,400)", "");
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(500));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#classic-selection")));
+
+		driver.findElement(By.cssSelector("#classic-selection")).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PaymentHeader)));
+
+		driver.findElement(By.cssSelector(ConstantObj.PaymentOption));
+		driver.findElement(By.cssSelector(ConstantObj.OrderSummaryTitle));
+		driver.findElement(By.xpath(ConstantObj.GiftCardTitle));
+		driver.findElement(By.xpath(ConstantObj.GiftCardOption));
+		driver.findElement(By.cssSelector(ConstantObj.PaymentMethodRadioButton));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.PaymentMethod_NextButton)));
+		driver.findElement(By.xpath(ConstantObj.PaymentMethod_NextButton)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		driver.findElement(By.cssSelector(ConstantObj.Addons_Options));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.Next_Button)));
+		driver.findElement(By.xpath(ConstantObj.Next_Button)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		driver.findElement(By.xpath(ConstantObj.EmailAddress_Field)).sendKeys(ConstantObj.UserEmail);
+		driver.findElement(By.xpath(ConstantObj.Passowrd_Field)).sendKeys(ConstantObj.UserPasswrd);
+
+		js.executeScript("window.scrollBy(0,200)", "");
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.GoToPaymentMethod_Button)));
+		driver.findElement(By.xpath(ConstantObj.GoToPaymentMethod_Button)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PageLogo)));
+		driver.findElement(By.cssSelector(ConstantObj.PageLogo));
+		driver.findElement(By.cssSelector(ConstantObj.CompleteSubscription_Title));
+		driver.findElement(By.xpath(ConstantObj.CardNameHolder_Field));
+		driver.findElement(By.xpath(ConstantObj.CardNumber_Field));
+		driver.findElement(By.xpath(ConstantObj.CardExpiry_Month));
+		driver.findElement(By.xpath(ConstantObj.CardExpiry_Year));
+		driver.findElement(By.xpath(ConstantObj.CardCVV));
+
+		driver.findElement(By.cssSelector(ConstantObj.CancelButton));
+		driver.findElement(By.cssSelector(ConstantObj.SubmitButton));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConstantObj.CancelButton)));
+		driver.findElement(By.cssSelector(ConstantObj.CancelButton)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ConstantObj.PromoPage)));
+		driver.findElement(By.xpath(ConstantObj.PromoPage));
+		driver.findElement(By.xpath(ConstantObj.AddEmailField));
+		driver.findElement(By.xpath(ConstantObj.RedeemTheOfferButton));
+		driver.findElement(By.xpath(ConstantObj.DisplayedCountryName));
+
+	}
+
+	@Test(dataProvider = "getCountry", dataProviderClass = Constant_Countries.class)
+	public void Validate_Premium_Subscription_Flow_is_Working_Successfully(String URL, String Country) {
+
+		driver.get(URL);
+		driver.manage().window().maximize();
+		js.executeScript("window.scrollBy(0,400)", "");
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(500));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#premium-selection")));
+
+		driver.findElement(By.cssSelector("#premium-selection")).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PaymentHeader)));
+
+		driver.findElement(By.cssSelector(ConstantObj.PaymentOption));
+		driver.findElement(By.cssSelector(ConstantObj.OrderSummaryTitle));
+		driver.findElement(By.xpath(ConstantObj.GiftCardTitle));
+		driver.findElement(By.xpath(ConstantObj.GiftCardOption));
+		driver.findElement(By.cssSelector(ConstantObj.PaymentMethodRadioButton));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.PaymentMethod_NextButton)));
+		driver.findElement(By.xpath(ConstantObj.PaymentMethod_NextButton)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		driver.findElement(By.cssSelector(ConstantObj.Addons_Options));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.Next_Button)));
+		driver.findElement(By.xpath(ConstantObj.Next_Button)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		driver.findElement(By.xpath(ConstantObj.EmailAddress_Field)).sendKeys(ConstantObj.UserEmail);
+		driver.findElement(By.xpath(ConstantObj.Passowrd_Field)).sendKeys(ConstantObj.UserPasswrd);
+
+		js.executeScript("window.scrollBy(0,200)", "");
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(ConstantObj.GoToPaymentMethod_Button)));
+		driver.findElement(By.xpath(ConstantObj.GoToPaymentMethod_Button)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(ConstantObj.PageLogo)));
+		driver.findElement(By.cssSelector(ConstantObj.PageLogo));
+		driver.findElement(By.cssSelector(ConstantObj.CompleteSubscription_Title));
+		driver.findElement(By.xpath(ConstantObj.CardNameHolder_Field));
+		driver.findElement(By.xpath(ConstantObj.CardNumber_Field));
+		driver.findElement(By.xpath(ConstantObj.CardExpiry_Month));
+		driver.findElement(By.xpath(ConstantObj.CardExpiry_Year));
+		driver.findElement(By.xpath(ConstantObj.CardCVV));
+
+		driver.findElement(By.cssSelector(ConstantObj.CancelButton));
+		driver.findElement(By.cssSelector(ConstantObj.SubmitButton));
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(ConstantObj.CancelButton)));
+		driver.findElement(By.cssSelector(ConstantObj.CancelButton)).click();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ConstantObj.PromoPage)));
+		driver.findElement(By.xpath(ConstantObj.PromoPage));
+		driver.findElement(By.xpath(ConstantObj.AddEmailField));
+		driver.findElement(By.xpath(ConstantObj.RedeemTheOfferButton));
+		driver.findElement(By.xpath(ConstantObj.DisplayedCountryName));
+
+	}
 
 	@AfterClass
 	public void EndTest() {

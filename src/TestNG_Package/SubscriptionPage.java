@@ -1,6 +1,5 @@
 package TestNG_Package;
 
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -58,20 +57,13 @@ public class SubscriptionPage {
 		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-
 		driver.findElement(By.cssSelector(ConstantObj.Lite_Discovery));
 		driver.findElement(By.cssSelector(ConstantObj.Lite_FreeTrail));
 		
+		js.executeScript("window.scrollBy(0,100)", "");		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-	//	driver.findElement(By.xpath(ConstantObj.Lite_VideoQuality));
-	//	driver.findElement(By.xpath(ConstantObj.Lite_DeviceAccess));
-		
-		js.executeScript("window.scrollBy(0,100)", "");
-		
-	//	driver.findElement(By.xpath(ConstantObj.Lite_Rewind));
 		driver.findElement(By.cssSelector(ConstantObj.Lite_Offline));
-		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
 		driver.findElement(By.cssSelector(ConstantObj.Lite_Simultaneously));
@@ -92,7 +84,6 @@ public class SubscriptionPage {
 		driver.findElement(By.xpath(ConstantObj.Classic_Currency));
 		
 		js.executeScript("window.scrollBy(0,100)", "");
-		
 
 		driver.findElement(By.cssSelector(ConstantObj.Classic_Discovery));
 		driver.findElement(By.cssSelector(ConstantObj.Classic_FreeTrail));
@@ -104,12 +95,10 @@ public class SubscriptionPage {
 		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-	//    driver.findElement(By.xpath(ConstantObj.Classic_Rewind));
 		driver.findElement(By.cssSelector(ConstantObj.Classic_Offline));
 		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-	//	driver.findElement(By.cssSelector(ConstantObj.Classic_Simultaneously));
 		driver.findElement(By.cssSelector(ConstantObj.Classic_CastTV));
 	}
 	@Test(dataProvider="getCountry",dataProviderClass = Constant_Countries.class)
@@ -126,22 +115,16 @@ public class SubscriptionPage {
 		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-//		driver.findElement(By.cssSelector(ConstantObj.Premium_Discovery));
 		driver.findElement(By.cssSelector(ConstantObj.Premium_FreeTrail));
 		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-//		driver.findElement(By.xpath(ConstantObj.Premium_VideoQuality));
-//		driver.findElement(By.xpath(ConstantObj.Premium_DeviceAccess));
-		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-//		driver.findElement(By.xpath(ConstantObj.Premium_Rewind));
 		driver.findElement(By.cssSelector(ConstantObj.Premium_Offline));
 		
 		js.executeScript("window.scrollBy(0,100)", "");
 		
-//		driver.findElement(By.cssSelector(ConstantObj.Premium_Simultaneously));
 		driver.findElement(By.cssSelector(ConstantObj.Premium_CastTV));
 	}
 	@Test(dataProvider="getCountry",dataProviderClass = Constant_Countries.class)
@@ -149,15 +132,12 @@ public class SubscriptionPage {
 	{
 		js.executeScript("window.scrollBy(0,500)", "");
 		driver.findElement(By.cssSelector(ConstantObj.Addons_Section));
-	//	driver.findElement(By.xpath(ConstantObj.Addons_Title));
-	//	driver.findElement(By.xpath(ConstantObj.Addon_SubTitle));
 	}
 	@Test(dataProvider="getCountry",dataProviderClass = Constant_Countries.class)
 	public void ValidateThat_GiftCard_SectionDisplayedSuccessfully(String URL, String Country)
 	{
 		js.executeScript("window.scrollBy(0,500)", "");
 		driver.findElement(By.cssSelector(ConstantObj.GiftCard_Section));
-//		driver.findElement(By.xpath(ConstantObj.GiftCard_Title));
 	}
 	
 	@AfterClass

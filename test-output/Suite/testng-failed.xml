@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TestNG_Package.Listeners"/>
+  </listeners>
   <test name="Subscriptions(failed)">
     <classes>
-      <class name="TestNG_Package.TestRandom">
+      <class name="TestNG_Package.OrderSummary">
         <methods>
-          <include name="ValidateThatSubscriptionsPageOpensSuccessfully_And_HaveCorrectCountryName"/>
           <include name="intializtion"/>
+          <include name="Validate_Lite_Subscription_Flow_is_Working_Successfully" invocation-numbers="0 1 5 6 9 10"/>
+          <include name="Validate_Premium_Subscription_Flow_is_Working_Successfully" invocation-numbers="0 1 5 6 9 10"/>
+          <include name="Validate_Classic_Subscription_Flow_is_Working_Successfully" invocation-numbers="0 1 5 6 9 10"/>
           <include name="EndTest"/>
         </methods>
-      </class> <!-- TestNG_Package.TestRandom -->
+      </class> <!-- TestNG_Package.OrderSummary -->
     </classes>
   </test> <!-- Subscriptions(failed) -->
 </suite> <!-- Failed suite [Suite] -->
